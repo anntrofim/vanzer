@@ -13,7 +13,7 @@
   font-family: 'AvenirBlack';
   src: url(../fonts/AvenirBlack.ttf); }
 
-@-webkit-keyframes arrow_move {
+@-webkit-keyframes arrow-move {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -21,7 +21,7 @@
     -webkit-transform: translateX(50px);
     transform: translateX(50px); } }
 
-@keyframes arrow_move {
+@keyframes arrow-move {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -37,7 +37,7 @@
   font-family: 'AvenirBlack';
   src: url(../fonts/AvenirBlack.ttf); }
 
-@keyframes arrow_move {
+@keyframes arrow-move {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -7824,8 +7824,8 @@ a.text-dark:hover, a.text-dark:focus {
       width: 100%;
       background-color: #ff4200; }
     .header__btn:hover .header__arr {
-      -webkit-animation-name: arrow_move;
-      animation-name: arrow_move;
+      -webkit-animation-name: arrow-move;
+      animation-name: arrow-move;
       -webkit-animation-duration: 1.7s;
       animation-duration: 1.7s;
       -webkit-animation-iteration-count: infinite;
@@ -7842,7 +7842,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'AvenirBlack';
   src: url(../fonts/AvenirBlack.ttf); }
 
-@keyframes arrow_move {
+@keyframes arrow-move {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -15588,7 +15588,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'AvenirBlack';
   src: url(../fonts/AvenirBlack.ttf); }
 
-@keyframes arrow_move {
+@keyframes arrow-move {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -23348,14 +23348,9 @@ a.text-dark:hover, a.text-dark:focus {
       transition: all 0.2s ease-in-out; }
     .services__link:hover, .services__link:focus {
       color: #b3b3b3; }
-  .services__categories {
-    -webkit-transform: translateY(70vh);
-    -ms-transform: translateY(70vh);
-    transform: translateY(70vh); }
   .services__cat-info {
     display: none;
-    color: #b3b3b3;
-    width: 400px; }
+    color: #b3b3b3; }
     .services__cat-info.active.show {
       -webkit-transition: all 1s ease;
       -o-transition: all 1s ease;
@@ -23400,7 +23395,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'AvenirBlack';
   src: url(../fonts/AvenirBlack.ttf); }
 
-@keyframes arrow_move {
+@keyframes arrow-move {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -31181,13 +31176,18 @@ a.text-dark:hover, a.text-dark:focus {
   outline: none; }
 
 .slick-dots {
-  bottom: 35px !important;
+  z-index: 1;
+  bottom: 35px;
   left: 80%; }
   .slick-dots li button:before {
-    color: #999;
-    font-size: 12px; }
+    opacity: 1;
+    color: #777;
+    font-size: 11px; }
   .slick-dots li.slick-active button:before {
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
 
 @font-face {
   font-family: 'AvenirHeavy';
@@ -31197,7 +31197,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'AvenirBlack';
   src: url(../fonts/AvenirBlack.ttf); }
 
-@keyframes arrow_move {
+@keyframes arrow-move {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -38915,7 +38915,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'AvenirBlack';
   src: url(../fonts/AvenirBlack.ttf); }
 
-@keyframes arrow_move {
+@keyframes arrow-move {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -46713,6 +46713,12 @@ a.text-dark:hover, a.text-dark:focus {
     .contact__btn:focus {
       outline: none; }
 
+#map {
+  height: 100vh;
+  width: 75%;
+  position: absolute;
+  overflow: hidden; }
+
 /*!Insert copyright here. This will be included in the compiled and minified CSS*/
 :root {
   --blue: #007bff;
@@ -54469,12 +54475,3 @@ a.text-dark:hover, a.text-dark:focus {
 
 .fp-viewing-4 #fp-nav ul li .fp-tooltip {
   color: #000; }
-
-#map {
-  height: 100vh;
-  width: 75%;
-  position: absolute;
-  overflow: hidden; }
-
-.slick-dots {
-  bottom: -100px; }
