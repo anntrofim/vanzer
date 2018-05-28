@@ -6,45 +6,57 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="favicon.ico"/>
 
+	<!-- font awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
+	<!-- slider -->
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
 
-	<link rel="stylesheet" type="text/css" href="css/_at_jquery.fullPage.css" />
+	<!-- fullpage -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
+	<!-- animation -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+
+	<!-- custom -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-
-
 <body>
-
 	<div id="fullpage">
 
 		<header class="header section">
-			<div class="header__nav">
+			<div class="header__nav is-animated">
 				<div class="header__logo"><img src="icons/logo.png" alt="VZ"></div>
 				<button class="header__burgermenu"><i class="fas fa-bars"></i></button>
 			</div>
 
 			<div class="container header__container pl-9">
 
-				<h1 class="text-uppercase header__title">Vanzer</h1>
-				<h2 class="text-uppercase header__subtitle">Lorem ipsum dolor sit amet</h2>
+				<h1 class="text-uppercase header__title is-animated">Vanzer</h1>
+				<h2 class="text-uppercase header__subtitle is-animated">Lorem ipsum dolor sit amet</h2>
 
-				<button class="header__btn text-left text-white pt-3 px-0 mt-5">Read More<i class="header__arr fas fa-long-arrow-alt-right"></i></button>
-
+				<button id="btnDisableFP" class="header__btn is-animated text-left text-white pt-3 px-0 mt-5">Read More<i class="header__arr fas fa-long-arrow-alt-right"></i></button>
 			</div>
 
+			<aside class="header__socials d-flex flex-column justify-content-center">
+				<a href="#"><i class="is-animated fab fa-facebook-f"></i></a>
+				<a href="#"><i class="is-animated fab fa-twitter"></i></a>
+				<a href="#"><i class="is-animated fab fa-dribbble"></i></a>
+				<a href="#"><i class="is-animated fab fa-behance"></i></a>
+			</aside>
 		</header>
 
 
-		<section class="about section">
+		<section class="about section" id="about">
 			<div class="container about__container pl-7">
-				<h1 class="text-uppercase about__title"><span class="text-danger">Creative</span> Studio</h1>
+				<div class="about__bgimg about__bgimg--1 is-animated offset-4"><img src="images/about-bg-img-1.jpg" alt=""></div>
+				<div class="about__bgimg about__bgimg--2 is-animated offset-7" ><img src="images/about-bg-img-2.jpg" alt="">
+				</div>
+				<h1 class="about__title is-animated text-uppercase"><span class="text-danger">Creative</span> Studio</h1>
 
-				<p class="about__txt pt-4 pl-6 mt-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p class="about__txt is-animated pt-4 pl-6 mt-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 		</section>
 
@@ -52,29 +64,26 @@
 			<div class="container services__container">
 				<div class="row">
 					<div class="offset-3 offset-md-2 offset-lg-1 col-9">
-						<h1 class="services__title text-uppercase text-white pb-3 mt-6 mt-md-8 mb-5 mb-md-7">Services</h1>
+						<h1 class="services__title text-uppercase text-white pb-3 mt-6 mt-md-8 mb-5 mb-md-7 is-animated">Services</h1>
 					</div>
-					<div class="services__col offset-2 offset-lg-1 col-12 col-md-5">
-						<div class="services__cat-list nav flex-column nav-pills" id="v-pills-tab-services" role="tablist" aria-orientation="vertical">
-							<a class="services__link my-2 nav-link" id="v-pills-home-tab-services" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Industrial design</a>
-							<a class="services__link my-2 nav-link" id="v-pills-profile-tab-services" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Web design</a>
-							<a class="services__link my-2 nav-link active" id="v-pills-messages-tab-services" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Photography</a>
+					<div class="offset-2 offset-lg-1 col-12 col-md-5 nav flex-column nav-pills" id="v-pills-s-tab" role="tablist" aria-orientation="vertical">
+						<a class="services__link is-animated my-2 nav-link" id="v-pills-s-industrial-tab" data-toggle="pill" href="#v-pills-s-industrial" role="tab" aria-controls="v-pills-s-industrial" aria-selected="true">Industrial design</a>
+						<a class="services__link is-animated my-2 nav-link" id="v-pills-s-web-tab" data-toggle="pill" href="#v-pills-s-web" role="tab" aria-controls="v-pills-s-web" aria-selected="false">Web design</a>
+						<a class="services__link is-animated my-2 nav-link active" id="v-pills-s-photography-tab" data-toggle="pill" href="#v-pills-s-photography" role="tab" aria-controls="v-pills-s-photography" aria-selected="false">Photography</a>
+					</div>
+
+					<div class="is-animated col-12 col-md-5 pt-7 tab-content" id="v-pills-s-tabContent">
+						<div class="services__cat-info tab-pane fade" id="v-pills-s-industrial" role="tabpanel" aria-labelledby="v-pills-s-industrial-tab">
+							<h3 class="services__cat-title services__cat-title--industrial">Industrial design</h3>
+							<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
 						</div>
-					</div>
-					<div class="services__col col-12 col-md-5">
-						<div class="services__categories tab-content" id="v-pills-tabContent">
-							<div class="services__cat-info tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab-services">
-								<h3 class="services__cat-title services__cat-title--industrial">Industrial design</h3>
-								<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
-							</div>
-							<div class="services__cat-info tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab-services">
-								<h3 class="services__cat-title services__cat-title--web">Web design</h3>
-								<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
-							</div>
-							<div class="services__cat-info tab-pane fade show active" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab-services">
-								<h3 class="services__cat-title services__cat-title--photo">Photography</h3>
-								<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
-							</div>
+						<div class="services__cat-info tab-pane fade" id="v-pills-s-web" role="tabpanel" aria-labelledby="v-pills-s-web-tab">
+							<h3 class="services__cat-title services__cat-title--web">Web design</h3>
+							<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
+						</div>
+						<div class="services__cat-info tab-pane fade show active" id="v-pills-s-photography" role="tabpanel" aria-labelledby="v-pills-s-photography-tab">
+							<h3 class="services__cat-title services__cat-title--photo">Photography</h3>
+							<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
 						</div>
 					</div>
 				</div>
@@ -85,53 +94,187 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 pl-6">
-						<h1 class="portfolio__title text-uppercase text-white pb-3 mt-6">Portfolio</h1>
+						<h1 class="portfolio__title is-animated text-uppercase text-white pb-3 mt-6">Portfolio</h1>
 					</div>
 
-					<div class="col-7 pl-6">
-						<div class="row autoplay">
-							<div class="portfolio__project mx-2 text-center text-white">
-								<img class="portfolio__photo w-100 mx-auto" src="images/p-img1.jpg" alt="">
-								<div class="portfolio__info mt-3">
-									<h6 class="text-uppercase">Coffee Cup</h6>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-									<div class="portfolio__link mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+					<div class="is-animated col-7 pl-6 tab-content" id="v-pills-p-tabContent">
+
+<!-- 						<div class="tab-pane fade" id="v-pills-p-industrial" role="tabpanel" aria-labelledby="v-pills-p-industrial-tab">
+							<div class="row autoplay-i">
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-i-img1.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-3">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-i-img2.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-i-img3.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-i-img4.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-i-img5.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
 								</div>
 							</div>
-							<div class="portfolio__project mx-2 text-center text-white">
-								<img class="portfolio__photo w-100 mx-auto" src="images/p-img2.jpg" alt="">
-								<div class="portfolio__info mt-4">
-									<h6 class="text-uppercase">Coffee Cup</h6>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-									<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+						</div> -->
+						<div class="tab-pane fade" id="v-pills-p-industrial" role="tabpanel" aria-labelledby="v-pills-p-industrial-tab">
+							<p>Slides of Industrial Design</p>
+						</div>
+
+<!-- 						<div class="tab-pane fade" id="v-pills-p-web" role="tabpanel" aria-labelledby="v-pills-p-web-tab">
+							<div class="row autoplay-w">
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-w-img1.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-3">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-w-img2.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-w-img3.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-w-img4.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-w-img5.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
 								</div>
 							</div>
-							<div class="portfolio__project mx-2 text-center text-white">
-								<img class="portfolio__photo w-100 mx-auto" src="images/p-img1.jpg" alt="">
-								<div class="portfolio__info mt-4">
-									<h6 class="text-uppercase">Coffee Cup</h6>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-									<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+						</div> -->
+						<div class="tab-pane fade" id="v-pills-p-web" role="tabpanel" aria-labelledby="v-pills-p-web-tab">
+							<p>Slides of Web Design</p>
+						</div>
+
+						<div class="tab-pane fade show active" id="v-pills-p-photography" role="tabpanel" aria-labelledby="v-pills-p-photography-tab">
+							<div class="row autoplay-p">
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-p-img1.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-3">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
 								</div>
-							</div>
-							<div class="portfolio__project mx-2 text-center text-white">
-								<img class="portfolio__photo w-100 mx-auto" src="images/p-img2.jpg" alt="">
-								<div class="portfolio__info mt-4">
-									<h6 class="text-uppercase">Coffee Cup</h6>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-									<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-p-img2.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-p-img3.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-p-img4.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
+								</div>
+								<div class="portfolio__project mx-2 text-center text-white">
+									<div class="portfolio__photo">
+										<img src="images/portfolio-p-img5.jpg" alt="">
+									</div>
+									<div class="portfolio__info mt-4">
+										<h6 class="text-uppercase">Coffee Cup</h6>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-
-					<div class="col-3 offset-1">
-						<div class="services__cat-list nav flex-column nav-pills mt-7" id="v-pills-tab-portfolio" role="tablist" aria-orientation="vertical">
-							<a class="services__link my-2 nav-link" id="v-pills-home-tab-portfolio" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Industrial design</a>
-							<a class="services__link my-2 nav-link" id="v-pills-profile-tab-portfolio" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Web design</a>
-							<a class="services__link my-2 nav-link active" id="v-pills-messages-tab-portfolio" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Photography</a>
-						</div>
+					<div class="portfolio__cat-list nav flex-column nav-pills col-3 offset-1 mt-7" id="v-pills-p-tab" role="tablist" aria-orientation="vertical">
+						<a class="services__link is-animated my-2 nav-link" id="v-pills-p-industrial-tab" data-toggle="pill" href="#v-pills-p-industrial" role="tab" aria-controls="v-pills-p-industrial" aria-selected="true">Industrial design</a>
+						<a class="services__link is-animated my-2 nav-link" id="v-pills-p-web-tab" data-toggle="pill" href="#v-pills-p-web" role="tab" aria-controls="v-pills-p-web" aria-selected="false">Web design</a>
+						<a class="services__link is-animated my-2 nav-link active" id="v-pills-p-photography-tab" data-toggle="pill" href="#v-pills-p-photography" role="tab" aria-controls="v-pills-p-photography" aria-selected="false">Photography</a>
 					</div>
 				</div>
 			</div>
@@ -139,20 +282,51 @@
 
 		<section class="blog section">
 			<div class="container">
-				<h1 class="contact__title text-uppercase text-white pb-3 mt-6">Blog</h1>
+				<div class="row">
+					<div class="col-12 pl-6">
+						<h1 class="blog__title is-animated text-uppercase pb-3 mt-6">Recent Blog</h1>
+					</div>
+
+					<div class="col-12 blog_rotator" id="blogRotator">
+						<div class="is-animated">
+							<div class="blog__article d-flex justify-content-between align-items-center at-active" id="blogArticle-1">
+								<div class="blog__picture"><img class="w-100" src="images/blog-img1.jpg" alt=""></div>
+								<div class="blog__info d-inline-block">
+									<h1 class="blog__art-title text-uppercase">Time is over</h1>
+									<p class="blog__art-info">Photography / Today / by Crophos</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="blog__article d-flex justify-content-between align-items-center non-at-active-top" id="blogArticle-2">
+							<div class="blog__picture"><img class="w-100" src="images/blog-img2.jpg" alt=""></div>
+							<div class="blog__info is-animated d-inline-block">
+								<h1 class="blog__art-title text-uppercase">Faberge Egg</h1>
+								<p class="blog__art-info">Industrial Design / Yesterday / by John Doe</p>
+							</div>
+						</div>
+
+						<div class="blog__article d-flex justify-content-between align-items-center non-at-active-bottom" id="blogArticle-3">
+							<div class="blog__picture"><img class="w-100" src="images/blog-img3.jpg" alt=""></div>
+							<div class="blog__info is-animated d-inline-block">
+								<h1 class="blog__art-title text-uppercase">Sergei Polunin</h1>
+								<p class="blog__art-info">Photography / May, 18, 2018 / by Clark Kent</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<section class="contact section">
 
-			<div id="map" class=""></div>
 
 			<div class="container">
 				<div class="row">
-					<div class="contact__info col-5 pl-5 d-flex flex-column justify-content-between">
+					<div class="contact__info col-5 pl-6 d-flex flex-column justify-content-between">
 						<h1 class="contact__title text-uppercase text-white pb-3 mt-6">Contact</h1>
 
-						<div class="contact__data pl-6 mb-7">
+						<div class="contact__data pl-7 mb-7">
 							<div class="contact__elem">
 								<img src="icons/mail.svg" alt="">
 								<h6 class="text-uppercase contact__info-title">E-mail</h6>
@@ -167,14 +341,14 @@
 								<img src="icons/location.svg" alt="">
 								<h6 class="text-uppercase contact__info-title">Adress</h6>
 								<p>Trofim Inc.</p>
-								<p>21, Teremkivska St.</p>
-								<p>Kyiv</p>
-								<p>Ukraine</p>
+								<p>221B, Baker St.</p>
+								<p>London, England</p>
 							</div>
 						</div>
 						<p class="contact__copyright mb-4">Copyright © 2018. All Right Reserved. Created by Anna Trofimova</p>
 					</div>
 
+					<div id="map" class="contact__map offset-4 col-7"></div>
 
 					<div class="contact__form-container col-5 pb-4 d-flex flex-column justify-content-end">
 						<form class="contact__form px-5 py-4">
@@ -189,36 +363,29 @@
 							</div>
 						</form>
 					</div>
-
-
-
 				</div>
 			</div>
 		</section>
 
 	</div>
 
-
-
 	<script src="js/jquery-3.3.1.min.js"></script> <!-- jquery -->
 	<script src="js/jquery.fullPage.js"></script> <!-- fullpage -->
 	<script src="js/scrolloverflow.min.js"></script> <!-- fullpage -->
 
+	<!-- slider -->
+	<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-	<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- slider -->
+	<!-- custom -->
+	<script src="js/script.js"></script>
 
-	<script src="js/script.js"></script> <!-- custom -->
-
-
-
-
-
-
-	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script> <!-- google maps -->
+	<!-- google maps -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 
 	<!-- bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>

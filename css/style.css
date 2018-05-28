@@ -17,17 +17,23 @@
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
-  100% {
+  95% {
     -webkit-transform: translateX(50px);
-    transform: translateX(50px); } }
+    transform: translateX(50px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 @keyframes arrow-move {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
-  100% {
+  95% {
     -webkit-transform: translateX(50px);
-    transform: translateX(50px); } }
+    transform: translateX(50px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 @font-face {
   font-family: 'AvenirHeavy';
@@ -41,9 +47,12 @@
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
-  100% {
+  95% {
     -webkit-transform: translateX(50px);
-    transform: translateX(50px); } }
+    transform: translateX(50px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 /*!Insert copyright here. This will be included in the compiled and minified CSS*/
 :root {
@@ -7774,13 +7783,22 @@ a.text-dark:hover, a.text-dark:focus {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     font-size: 2em;
-    color: #adb5bd; }
+    color: #adb5bd;
+    -webkit-transition: all .5 ease;
+    -o-transition: all .5 ease;
+    transition: all .5 ease; }
     .header__burgermenu:hover {
       -webkit-transition: all 0.2s ease-in-out;
       -o-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
     .header__burgermenu:focus {
       outline: none; }
+    .header__burgermenu:hover {
+      color: #ff4200;
+      -webkit-transition: all .5 ease;
+      -o-transition: all .5 ease;
+      transition: all .5 ease;
+      opacity: .7; }
   .header__container {
     position: absolute;
     top: 50%;
@@ -7833,6 +7851,24 @@ a.text-dark:hover, a.text-dark:focus {
   .header__arr {
     color: #ff4200;
     margin-left: 10px; }
+  .header__socials {
+    position: absolute;
+    right: 25px;
+    bottom: 45%;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%); }
+    .header__socials a {
+      color: #fff;
+      margin: 15px 0;
+      -webkit-transition: all .4s ease;
+      -o-transition: all .4s ease;
+      transition: all .4s ease; }
+      .header__socials a:hover {
+        color: #ff4200;
+        -webkit-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease; }
 
 @font-face {
   font-family: 'AvenirHeavy';
@@ -7846,9 +7882,12 @@ a.text-dark:hover, a.text-dark:focus {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
-  100% {
+  95% {
     -webkit-transform: translateX(50px);
-    transform: translateX(50px); } }
+    transform: translateX(50px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 /*!Insert copyright here. This will be included in the compiled and minified CSS*/
 :root {
@@ -15571,14 +15610,25 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 14px;
     color: #adb5bd;
     letter-spacing: .200em;
-    width: 70%; }
+    width: 65%; }
     .about__txt::before {
       content: "";
       position: absolute;
       top: 0;
       height: 2px;
-      width: 400px;
+      width: 350px;
       background-color: #adb5bd; }
+  .about__bgimg {
+    position: absolute;
+    z-index: -1; }
+    .about__bgimg img {
+      width: 100%; }
+    .about__bgimg--1 {
+      width: 30%;
+      margin-top: -155px; }
+    .about__bgimg--2 {
+      width: 30%;
+      margin-top: 10px; }
 
 @font-face {
   font-family: 'AvenirHeavy';
@@ -15592,9 +15642,12 @@ a.text-dark:hover, a.text-dark:focus {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
-  100% {
+  95% {
     -webkit-transform: translateX(50px);
-    transform: translateX(50px); } }
+    transform: translateX(50px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 /*!Insert copyright here. This will be included in the compiled and minified CSS*/
 :root {
@@ -23300,8 +23353,6 @@ a.text-dark:hover, a.text-dark:focus {
   background-position: center;
   background-size: cover;
   position: relative; }
-  .services__col {
-    height: 100vh; }
   .services__title {
     position: relative;
     font-size: 40px;
@@ -23311,7 +23362,7 @@ a.text-dark:hover, a.text-dark:focus {
       position: absolute;
       bottom: 0;
       height: 2px;
-      width: 400px;
+      width: 350px;
       background-color: #ff4200; }
     .services__title:after {
       content: "Services";
@@ -23399,9 +23450,12 @@ a.text-dark:hover, a.text-dark:focus {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
-  100% {
+  95% {
     -webkit-transform: translateX(50px);
-    transform: translateX(50px); } }
+    transform: translateX(50px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 /*!Insert copyright here. This will be included in the compiled and minified CSS*/
 :root {
@@ -31116,7 +31170,7 @@ a.text-dark:hover, a.text-dark:focus {
       position: absolute;
       bottom: 0;
       height: 2px;
-      width: 400px;
+      width: 350px;
       background-color: #ff4200; }
     .portfolio__title:after {
       content: "Portfolio";
@@ -31128,15 +31182,33 @@ a.text-dark:hover, a.text-dark:focus {
       color: #f7f7f7;
       opacity: .1;
       font-size: 10em;
-      left: 580px;
+      left: 565px;
       top: -140px; }
+  .portfolio__project:hover .portfolio__photo {
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    opacity: .6; }
   .portfolio__photo {
-    -webkit-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
-    width: 200px;
-    margin-top: 150px; }
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    margin-top: 150px;
+    padding: 50%;
+    position: relative;
+    overflow: hidden; }
+    .portfolio__photo img {
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
   .portfolio__info {
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
     opacity: 0;
     font-size: .7em; }
   .portfolio__link {
@@ -31149,15 +31221,26 @@ a.text-dark:hover, a.text-dark:focus {
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       transform: rotate(90deg);
-      width: 40%; }
+      width: 40%;
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    .portfolio__link:hover img {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+  .portfolio__cat-list {
+    pointer-events: none; }
+    .portfolio__cat-list a {
+      pointer-events: all; }
 
 .slick-current + .slick-active {
   -webkit-transform: translateY(-100px);
   -ms-transform: translateY(-100px);
-  transform: translateY(-100px);
-  -webkit-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  transition: all 2s ease; }
+  transform: translateY(-100px); }
   .slick-current + .slick-active .portfolio__info {
     opacity: 1;
     -webkit-transition: all 2s ease;
@@ -31176,11 +31259,10 @@ a.text-dark:hover, a.text-dark:focus {
   outline: none; }
 
 .slick-dots {
-  z-index: 1;
   bottom: 35px;
   left: 80%; }
   .slick-dots li button:before {
-    opacity: 1;
+    opacity: 10;
     color: #777;
     font-size: 11px; }
   .slick-dots li.slick-active button:before {
@@ -31201,9 +31283,12 @@ a.text-dark:hover, a.text-dark:focus {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
-  100% {
+  95% {
     -webkit-transform: translateX(50px);
-    transform: translateX(50px); } }
+    transform: translateX(50px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 /*!Insert copyright here. This will be included in the compiled and minified CSS*/
 :root {
@@ -38906,6 +38991,93 @@ a.text-dark:hover, a.text-dark:focus {
 
 .blog {
   position: relative; }
+  .blog__title {
+    position: relative;
+    font-size: 40px;
+    letter-spacing: .5em; }
+    .blog__title:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      width: 350px;
+      background-color: #ff4200; }
+    .blog__title:after {
+      content: "Blog";
+      text-transform: uppercase;
+      position: absolute;
+      font-size: 5em;
+      font-weight: bold;
+      letter-spacing: .6em;
+      color: #f7f7f7;
+      opacity: .1;
+      opacity: 1;
+      left: 580px;
+      top: -70px; }
+  .blog__rotator {
+    position: relative; }
+  .blog__picture {
+    display: none;
+    padding: 30% 25%;
+    position: relative;
+    overflow: hidden; }
+    .blog__picture img {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .blog__info {
+    width: 100%; }
+  .blog__art-title {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: .1em; }
+  .blog__art-info {
+    font-size: 12px;
+    color: #adb5bd; }
+  .blog__article {
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease; }
+    .blog__article.at-active {
+      left: 5rem;
+      width: 50%;
+      -webkit-transform: translateY(15%);
+      -ms-transform: translateY(15%);
+      transform: translateY(15%); }
+      .blog__article.at-active .blog__picture {
+        display: inline-block; }
+      .blog__article.at-active .blog__info {
+        padding-top: 45px;
+        width: 44%; }
+      .blog__article.at-active .blog__art-title {
+        font-size: 24px; }
+        .blog__article.at-active .blog__art-title:before {
+          content: "";
+          position: absolute;
+          top: 15px;
+          left: -80px;
+          height: 2px;
+          width: 65px;
+          background-color: #ff4200; }
+    .blog__article.non-at-active-top {
+      left: calc(50% + 9rem);
+      width: 25%;
+      -webkit-transform: translateY(270%);
+      -ms-transform: translateY(270%);
+      transform: translateY(270%); }
+    .blog__article.non-at-active-bottom {
+      left: calc(50% + 9rem);
+      width: 25%;
+      -webkit-transform: translateY(420%);
+      -ms-transform: translateY(420%);
+      transform: translateY(420%); }
 
 @font-face {
   font-family: 'AvenirHeavy';
@@ -38919,9 +39091,12 @@ a.text-dark:hover, a.text-dark:focus {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
-  100% {
+  95% {
     -webkit-transform: translateX(50px);
-    transform: translateX(50px); } }
+    transform: translateX(50px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 /*!Insert copyright here. This will be included in the compiled and minified CSS*/
 :root {
@@ -46639,7 +46814,7 @@ a.text-dark:hover, a.text-dark:focus {
       position: absolute;
       bottom: 0;
       height: 2px;
-      width: 400px;
+      width: 350px;
       background-color: #ff4200; }
     .contact__title:after {
       content: "Contact";
@@ -46712,10 +46887,12 @@ a.text-dark:hover, a.text-dark:focus {
       transition: all 0.2s ease-in-out; }
     .contact__btn:focus {
       outline: none; }
+    .contact__btn:hover {
+      background-color: #cc3500; }
 
 #map {
   height: 100vh;
-  width: 75%;
+  width: 100%;
   position: absolute;
   overflow: hidden; }
 
@@ -54417,6 +54594,66 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
+
+#fp-nav ul li {
+  margin: 10px 7px; }
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span {
+  height: 10px;
+  width: 10px;
+  margin: -2px 0 0 -2px; }
+
+#fp-nav ul li a span {
+  height: 10px;
+  width: 10px;
+  background: #999;
+  top: 0;
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease; }
+
+#fp-nav ul li a span:before {
+  content: "";
+  width: 3px;
+  height: 65px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  opacity: 0; }
+
+#fp-nav ul li a.active span:before {
+  opacity: 1;
+  -webkit-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease; }
+
+#fp-nav ul li:hover a span {
+  width: 10px;
+  height: 10px;
+  margin: -2px 0 0 -2px; }
+
+#fp-nav ul li .fp-tooltip {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: bold;
+  position: absolute;
+  top: -7px; }
+
+#fp-nav ul li a.active + .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  -webkit-transition: opacity .7s ease;
+  -o-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+  width: auto;
+  opacity: 1;
+  margin-left: 10px; }
+
+#fp-nav ul li:hover .fp-tooltip {
+  margin-left: 10px; }
 
 .fp-viewing-0 ul li:nth-child(1) {
   height: 85px !important; }
