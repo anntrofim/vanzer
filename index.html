@@ -63,16 +63,16 @@
 		<section class="services section">
 			<div class="container services__container">
 				<div class="row">
-					<div class="offset-3 offset-md-2 offset-lg-1 col-9">
+					<div class="offset-1 pl-6 col-9">
 						<h1 class="services__title text-uppercase text-white pb-3 mt-6 mt-md-8 mb-5 mb-md-7 is-animated">Services</h1>
 					</div>
-					<div class="offset-2 offset-lg-1 col-12 col-md-5 nav flex-column nav-pills" id="v-pills-s-tab" role="tablist" aria-orientation="vertical">
+					<div class="offset-1 pl-6 col-5 nav flex-column nav-pills" id="v-pills-s-tab" role="tablist" aria-orientation="vertical" style="padding-left: 15px;">
 						<a class="services__link is-animated my-2 nav-link" id="v-pills-s-industrial-tab" data-toggle="pill" href="#v-pills-s-industrial" role="tab" aria-controls="v-pills-s-industrial" aria-selected="true">Industrial design</a>
 						<a class="services__link is-animated my-2 nav-link" id="v-pills-s-web-tab" data-toggle="pill" href="#v-pills-s-web" role="tab" aria-controls="v-pills-s-web" aria-selected="false">Web design</a>
 						<a class="services__link is-animated my-2 nav-link active" id="v-pills-s-photography-tab" data-toggle="pill" href="#v-pills-s-photography" role="tab" aria-controls="v-pills-s-photography" aria-selected="false">Photography</a>
 					</div>
 
-					<div class="is-animated col-12 col-md-5 pt-7 tab-content" id="v-pills-s-tabContent">
+					<div class="is-animated col-5 pt-7 tab-content" id="v-pills-s-tabContent">
 						<div class="services__cat-info tab-pane fade" id="v-pills-s-industrial" role="tabpanel" aria-labelledby="v-pills-s-industrial-tab">
 							<h3 class="services__cat-title services__cat-title--industrial">Industrial design</h3>
 							<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
@@ -81,7 +81,7 @@
 							<h3 class="services__cat-title services__cat-title--web">Web design</h3>
 							<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
 						</div>
-						<div class="services__cat-info tab-pane fade show active" id="v-pills-s-photography" role="tabpanel" aria-labelledby="v-pills-s-photography-tab">
+						<div class="services__cat-info tab-pane fade active show" id="v-pills-s-photography" role="tabpanel" aria-labelledby="v-pills-s-photography-tab">
 							<h3 class="services__cat-title services__cat-title--photo">Photography</h3>
 							<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
 						</div>
@@ -93,11 +93,11 @@
 		<section class="portfolio section">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 pl-6">
+					<div class="offset-1 pl-6 col-12">
 						<h1 class="portfolio__title is-animated text-uppercase text-white pb-3 mt-6">Portfolio</h1>
 					</div>
 
-					<div class="is-animated col-7 pl-6 tab-content" id="v-pills-p-tabContent">
+					<!-- <div class="is-animated col-7 pl-6 tab-content" id="v-pills-p-tabContent"> -->
 
 <!-- 						<div class="tab-pane fade" id="v-pills-p-industrial" role="tabpanel" aria-labelledby="v-pills-p-industrial-tab">
 							<div class="row autoplay-i">
@@ -152,12 +152,9 @@
 									</div>
 								</div>
 							</div>
-						</div> -->
-						<div class="tab-pane fade" id="v-pills-p-industrial" role="tabpanel" aria-labelledby="v-pills-p-industrial-tab">
-							<p>Slides of Industrial Design</p>
 						</div>
 
-<!-- 						<div class="tab-pane fade" id="v-pills-p-web" role="tabpanel" aria-labelledby="v-pills-p-web-tab">
+						<div class="tab-pane fade" id="v-pills-p-web" role="tabpanel" aria-labelledby="v-pills-p-web-tab">
 							<div class="row autoplay-w">
 								<div class="portfolio__project mx-2 text-center text-white">
 									<div class="portfolio__photo">
@@ -211,11 +208,9 @@
 								</div>
 							</div>
 						</div> -->
-						<div class="tab-pane fade" id="v-pills-p-web" role="tabpanel" aria-labelledby="v-pills-p-web-tab">
-							<p>Slides of Web Design</p>
-						</div>
 
-						<div class="tab-pane fade show active" id="v-pills-p-photography" role="tabpanel" aria-labelledby="v-pills-p-photography-tab">
+						<!-- <div class="tab-pane fade active show" id="v-pills-p-photography" role="tabpanel" aria-labelledby="v-pills-p-photography-tab"> -->
+						<div class="is-animated offset-1 pl-6 col-7 mt-4">
 							<div class="row autoplay-p">
 								<div class="portfolio__project mx-2 text-center text-white">
 									<div class="portfolio__photo">
@@ -269,13 +264,16 @@
 								</div>
 							</div>
 						</div>
-					</div>
+						<!-- </div> -->
+						<!-- </div> -->
 
-					<div class="portfolio__cat-list nav flex-column nav-pills col-3 offset-1 mt-7" id="v-pills-p-tab" role="tablist" aria-orientation="vertical">
-						<a class="services__link is-animated my-2 nav-link" id="v-pills-p-industrial-tab" data-toggle="pill" href="#v-pills-p-industrial" role="tab" aria-controls="v-pills-p-industrial" aria-selected="true">Industrial design</a>
-						<a class="services__link is-animated my-2 nav-link" id="v-pills-p-web-tab" data-toggle="pill" href="#v-pills-p-web" role="tab" aria-controls="v-pills-p-web" aria-selected="false">Web design</a>
+<!-- 					<div class="portfolio__cat-list nav flex-column nav-pills col-3 offset-1 mt-7" id="v-pills-p-tab" role="tablist" aria-orientation="vertical">
+						<a class="services__link is-animated my-2 nav-link" id="v-pills-p-industrial-tab" data-toggle="pill" href="#v-pills-p-industrial" role="tab" aria-controls="v-pills-p-industrial" aria-selected="false">Industrial design</a>
+						<a class="services__link is-animated my-2 nav-link" id="v-pills-p-web-tab" data-toggle="pill" href="#v-pills-p-web" role="tab" aria-controls="v-pills-p-web" aria-selected="true">Web design</a>
 						<a class="services__link is-animated my-2 nav-link active" id="v-pills-p-photography-tab" data-toggle="pill" href="#v-pills-p-photography" role="tab" aria-controls="v-pills-p-photography" aria-selected="false">Photography</a>
-					</div>
+					</div> -->
+
+
 				</div>
 			</div>
 		</section>
@@ -283,7 +281,7 @@
 		<section class="blog section">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 pl-6">
+					<div class="pl-6 col-12">
 						<h1 class="blog__title is-animated text-uppercase pb-3 mt-6">Recent Blog</h1>
 					</div>
 
@@ -321,12 +319,16 @@
 		<section class="contact section">
 
 
+			<div class="contact__left w-50 position-absolute"></div>
+			<div class="contact__map w-50 position-absolute" id="map" ></div>
+
+
 			<div class="container">
 				<div class="row">
-					<div class="contact__info col-5 pl-6 d-flex flex-column justify-content-between">
-						<h1 class="contact__title text-uppercase text-white pb-3 mt-6">Contact</h1>
+					<div class="contact__info offset-1 col-5 d-flex flex-column justify-content-between">
+						<h1 class="contact__title is-animated text-uppercase text-white pb-3 mt-6">Contact</h1>
 
-						<div class="contact__data pl-7 mb-7">
+						<div class="contact__data is-animated offset-1 mt-4 mb-7">
 							<div class="contact__elem">
 								<img src="icons/mail.svg" alt="">
 								<h6 class="text-uppercase contact__info-title">E-mail</h6>
@@ -335,7 +337,7 @@
 							<div class="contact__elem">
 								<img src="icons/phone.svg" alt="">
 								<h6 class="text-uppercase contact__info-title">Phone</h6>
-								<p>+380 68 783 80 93</p>
+								<a class="" href="tel:0687838093">+380 68 783 80 93</a>
 							</div>
 							<div class="contact__elem">
 								<img src="icons/location.svg" alt="">
@@ -345,13 +347,12 @@
 								<p>London, England</p>
 							</div>
 						</div>
-						<p class="contact__copyright mb-4">Copyright © 2018. All Right Reserved. Created by Anna Trofimova</p>
+						<p class="contact__copyright is-animated mb-4">Copyright © 2018. All Right Reserved. Created by Anna Trofimova</p>
 					</div>
 
-					<div id="map" class="contact__map offset-4 col-7"></div>
 
 					<div class="contact__form-container col-5 pb-4 d-flex flex-column justify-content-end">
-						<form class="contact__form px-5 py-4">
+						<form class="contact__form is-animated px-5 py-4">
 							<div class="row">
 								<div class="col-12 p-0 d-flex justify-content-between">
 									<input type="text" class="contact__input contact__input--half py-2 px-3" placeholder="Your Name">
