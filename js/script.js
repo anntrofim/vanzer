@@ -90,13 +90,13 @@ $("#fullpage").fullpage({
 			isAnimatedBlog.eq(3).addClass('animated fadeInRight').css({'animation-delay': '1.6s', 'animation-duration': '1s'}); // article
 		}
 
-		// if(nextIndex == 6) {
-		// 	isAnimatedContact.eq(3).addClass('animated fadeInRight').css({'animation-delay': '0s', 'animation-duration': '1.5s'}); // map
-		// 	isAnimatedContact.eq(0).addClass('animated fadeInDown').css({'animation-delay': '.5s', 'animation-duration': '1.5s'}); // title
-		// 	isAnimatedContact.eq(1).addClass('animated fadeIn').css({'animation-delay': '1s', 'animation-duration': '1.5s'}); // data
-		// 	isAnimatedContact.eq(2).addClass('animated fadeInUp').css({'animation-delay': '1.2s', 'animation-duration': '1.5s'}); // copyright
-		// 	isAnimatedContact.eq(4).addClass('animated fadeInRight').css({'animation-delay': '1.5s', 'animation-duration': '1s'}); // form
-		// }
+		if(nextIndex == 6) {
+			// isAnimatedContact.eq(0).addClass('animated fadeInRight').css({'animation-delay': '0s', 'animation-duration': '1.5s'}); // map
+			isAnimatedContact.eq(1).addClass('animated fadeInDown').css({'animation-delay': '.5s', 'animation-duration': '1.5s'}); // title
+			isAnimatedContact.eq(2).addClass('animated fadeIn').css({'animation-delay': '1s', 'animation-duration': '1.5s'}); // data
+			isAnimatedContact.eq(3).addClass('animated fadeInUp').css({'animation-delay': '1.2s', 'animation-duration': '1.5s'}); // copyright
+			isAnimatedContact.eq(4).addClass('animated fadeInRight').css({'animation-delay': '1.5s', 'animation-duration': '1s'}); // form
+		}
 	}
 });
 
