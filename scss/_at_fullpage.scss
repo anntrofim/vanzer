@@ -1,0 +1,174 @@
+#fp-nav ul li {
+    margin: 10px 7px;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span {
+    height: 10px;
+    width: 10px;
+    margin: -2px 0 0 -2px;
+}
+
+#fp-nav ul li a span {
+    height: 10px;
+    width: 10px;
+    background: #999;
+    top: 0;
+    transition: all .7s ease;
+}
+
+#fp-nav ul li a span:before {
+  content: "";
+  width: 3px;
+  height: 65px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+#fp-nav ul li a.active span:before {
+  opacity: 1;
+  transition: all .7s ease;
+}
+
+#fp-nav ul li:hover a span {
+    width: 10px;
+    height: 10px;
+    margin: -2px 0 0 -2px;
+}
+
+#fp-nav ul li .fp-tooltip {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: bold;
+    position: absolute;
+    top: -7px;
+}
+
+#fp-nav ul li a.active + .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    transition: opacity .7s ease;
+    width: auto;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+#fp-nav ul li:hover .fp-tooltip {
+    margin-left: 10px;
+}
+
+//////////////////////////////////////////////////////////////////////
+
+@for $i from 0 through 5 {
+	.fp-viewing-#{$i} ul li:nth-child(#{$i+1}) {
+		height: 85px !important;
+	}
+}
+
+@for $i from 0 through 5 {
+	.fp-viewing-#{$i} #fp-nav ul li a.active span,
+	.fp-viewing-#{$i} #fp-nav ul li a.active span:before {
+		background: #fff;
+	}
+}
+
+.fp-viewing-1 #fp-nav ul li {
+	a.active span {
+		background: #000;
+		&:before {
+			background: #000;
+		}
+	}
+
+	.fp-tooltip {
+		color: #000;
+	}
+}
+
+.fp-viewing-4 #fp-nav ul li {
+	a.active span {
+		background: #000;
+		&:before {
+			background: #000;
+		}
+	}
+
+	.fp-tooltip {
+		color: #000;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////
+
+// #fp-nav {
+// 	&.fp-show-active a.active + .fp-tooltip {
+// 		transition: opacity .7s ease;
+// 		width: auto;
+// 		opacity: 1;
+// 		margin-left: 10px;
+// 	}
+
+// 	ul li {
+// 		margin: 10px 7px;
+
+// 		a span {
+// 			height: 10px;
+// 			width: 10px;
+// 			background: #999;
+// 			top: 0;
+// 			transition: all .7s ease;
+
+// 			&:before {
+// 				content: "";
+// 				width: 3px;
+// 				height: 65px;
+// 				position: absolute;
+// 				top: 20px;
+// 				left: 50%;
+// 				transform: translateX(-50%);
+// 				opacity: 0;
+// 			}
+// 		}
+
+// 		a.active span {
+// 			height: 10px;
+// 			width: 10px;
+// 			margin: -2px 0 0 -2px;
+
+// 			&:before {
+// 				opacity: 1;
+// 				transition: all .7s ease;
+// 			}
+// 		}
+
+// 		&:hover {
+// 			a span,
+// 			a.active span {
+// 				width: 10px;
+// 				height: 10px;
+// 				margin: -2px 0 0 -2px;
+// 			}
+// 		}
+
+// 		.fp-tooltip {
+// 			text-transform: uppercase;
+// 			letter-spacing: .2em;
+// 			font-weight: bold;
+// 			position: absolute;
+// 			top: -7px;
+// 		}
+
+// 		&:hover .fp-tooltip {
+// 			margin-left: 10px;
+// 		}
+
+// 		a.active + .fp-tooltip {
+// 			transition: opacity .7s ease;
+// 			width: auto;
+// 			opacity: 1;
+// 			margin-left: 10px;
+// 		}
+// 	}
+// }

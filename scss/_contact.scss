@@ -1,0 +1,163 @@
+@import "_at_variables.scss";
+@import "_at_bootstrap.scss";
+
+.contact {
+	position: relative;
+
+
+	&__left {
+		background: url(../images/contact-bg.jpg) no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+	}
+
+	&__map {
+		left: 50%;
+	}
+
+	&__title {
+		@include title;
+
+		&:before {
+			content: "";
+			@include title-line;
+		}
+
+		&:after {
+			content: "Contact";
+			@include bg-word;
+			left: -1400px;
+			top: 430px;
+
+		}
+	}
+
+	&__info {
+		height: 100vh;
+	}
+
+	&__data {
+
+	}
+
+	&__elem {
+		font-family: 'Lato', Arial, sans-serif;
+		margin: 20px 0;
+		position: relative;
+
+		img {
+			width: 25px;
+			position: absolute;
+			left: -35px;
+		}
+
+		p {
+			color: #999;
+			margin: 7px 0;
+			font-size: 13px;
+		}
+
+		a {
+			@include ref;
+			color: #999;
+
+			&:hover {
+				color: lighten(#999, 20%);
+			}
+		}
+
+		h6, a, p {
+			margin-left: 10px;
+		}
+
+	}
+
+	&__mail {
+
+	}
+
+	&__phone {
+
+	}
+
+	&__address {
+
+	}
+
+	&__info-title {
+		font-weight: 900;
+		color: #b3b3b3;
+		margin: 0;
+	}
+
+	&__copyright {
+		color: #999999;
+		font-size: 10px;
+	}
+
+	&__form {
+		background-color: #fff;
+		pointer-events: all;
+
+		&-container {
+			pointer-events: none;
+		}
+	}
+
+	&__input {
+		border: 1px solid $gray-200;
+		color: $gray-700;
+
+		&--half {
+			width: 48%;
+		}
+
+		&::placeholder {
+			color: $gray-500;
+		}
+
+		&:focus {
+			outline: none;
+			border-color: #feb69d;
+		}
+
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	&__btn {
+		@include btn;
+		background-color: $red;
+		font-size: 14px;
+		padding: 10px 20px;
+
+		&:hover {
+			background-color: darken($red, 10%);
+
+		}
+	}
+
+
+}
+
+#map {
+	height: 100vh;
+	width: 100%;
+	// position: absolute;
+	overflow: hidden;
+}
+
+.aaa {
+		color: $gray-500;
+		@include transition;
+		cursor: pointer;
+
+	&:hover {
+		color: lighten($red,20%);
+		@include transition;
+
+	}
+}

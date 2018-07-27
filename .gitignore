@@ -1,5 +1,5 @@
-
+*.psd
 /bootstrap-4.0.0
-/scss
+/_vanzer-assets
 
 prepros-6.config

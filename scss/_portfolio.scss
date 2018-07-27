@@ -1,0 +1,121 @@
+@import "_at_variables.scss";
+@import "_at_bootstrap.scss";
+
+.portfolio {
+	background: url(../images/portfolio-bg-bigger.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+	&__title {
+		@include title;
+
+		&:before {
+			content: "";
+			@include title-line;
+		}
+
+		&:after {
+			content: "Portfolio";
+			@include bg-word;
+			font-size: 3em;
+			left: 500px;
+			top: 60px;
+		}
+	}
+
+	&__project {
+		&:hover .portfolio__photo {
+			transition: all .5s ease;
+			opacity: .6;
+		}
+	}
+
+	&__photo {
+		transition: all .5s ease;
+		margin-top: 150px;
+		padding: 50%;
+		position: relative;
+		overflow: hidden;
+
+		img {
+			height: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__info {
+		transition: all .5s ease;
+		opacity: 0;
+		font-size: .7em;
+	}
+
+	&__link {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: #fff;
+		cursor: pointer;
+
+		img {
+			transform: rotate(90deg);
+			width: 40%;
+			transition: all .5s ease;
+		}
+
+		&:hover img {
+			transform: rotate(360deg);
+			transition: all .5s ease;
+		}
+	}
+
+	&__cat-list {
+		pointer-events: none;
+
+		a {
+			pointer-events: all;
+		}
+	}
+}
+
+.slick-current + .slick-active {
+	transform: translateY(-100px);
+
+	.portfolio__info {
+		opacity: 1;
+		transition: all 2s ease;
+	}
+}
+
+.slick-active {
+	transform: translateY(0px);
+	transition: all 2s ease;
+}
+
+.slick-slide {
+	&:focus {
+		outline: none;
+	}
+}
+
+.slick-dots {
+	bottom: 35px;
+	left: 80%;
+
+	li {
+		button:before {
+			opacity: 10;
+			color: #777;
+			font-size: 11px;
+		}
+		&.slick-active button:before {
+			color: #fff;
+			transition: all 1s ease;
+		}
+	}
+}
+
+

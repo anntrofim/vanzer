@@ -1,0 +1,85 @@
+// --------------- FONTS ---------------
+
+@import url('https://fonts.googleapis.com/css?family=Lato:700,900');
+
+@font-face {
+	font-family: 'AvenirHeavy';
+	src: url(../fonts/AvenirHeavy.ttf);
+}
+@font-face {
+	font-family: 'AvenirBlack';
+	src: url(../fonts/AvenirBlack.ttf);
+}
+
+// --------------- MIXINS ---------------
+
+@mixin transition {
+	transition: all .3s ease;
+}
+
+@mixin btn {
+	font-family: 'AvenirHeavy', Arial, sans-serif;
+	background-color: transparent;
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	@include transition;
+
+	&:hover {
+
+		@include transition;
+	}
+	&:focus {
+		outline:none;
+	}
+	&:active {
+
+	}
+}
+
+@mixin ref {
+	text-decoration: none;
+	font-family: 'AvenirHeavy', Arial, sans-serif;
+	background-color: transparent;
+	border: none;
+	text-transform: uppercase;
+	@include transition;
+
+	&:hover {
+		text-decoration: none;
+		@include transition;
+	}
+}
+
+@mixin title {
+	position: relative;
+	font-size: 40px;
+	letter-spacing: .5em;
+}
+
+@mixin title-line {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	width: 350px;
+	background-color: $red;
+}
+
+@mixin bg-word {
+	text-transform: uppercase;
+	position: absolute;
+	font-size: 5em;
+	font-weight: bold;
+	letter-spacing: .6em;
+	color: #f7f7f7;
+	opacity: .1;
+}
+
+// --------------- KEYFRAMES ---------------
+
+@keyframes arrow-move{
+	0% {transform: translateX(0);}
+	95% {transform: translateX(50px);}
+	100% {transform: translateX(0);}
+}
+

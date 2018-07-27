@@ -1,0 +1,98 @@
+@import "_at_variables.scss";
+@import "_at_bootstrap.scss";
+
+.header {
+	background: url(../images/header-bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	color: $white;
+
+	&__nav {
+		padding: 25px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__burgermenu {
+		@include btn;
+		font-size: 2em;
+		color: $gray-500;
+		transition: all .5 ease;
+
+		&:hover {
+			color: $red;
+			transition: all .5 ease;
+			opacity: .7;
+		}
+	}
+
+	&__container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&__title {
+		font-family: 'AvenirBlack', Arial, sans-serif;
+		font-size: 72px;
+		letter-spacing: .390em;
+	}
+
+	&__subtitle {
+		font-family: 'Lato', Arial, sans-serif;
+		font-size: 21px;
+		color: $gray-500;
+		letter-spacing: .250em;
+	}
+
+
+	&__btn {
+		@include btn;
+		position: relative;
+		width: 240px;
+		font-size: 14px;
+		letter-spacing: .2em;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			height: 2px;
+			width: 100%;
+			background-color: $red;
+		}
+
+		&:hover {
+			.header__arr {
+				animation-name: arrow-move;
+				animation-duration: 1.7s;
+				animation-iteration-count: infinite;
+			}
+		}
+	}
+
+	&__arr {
+		color: $red;
+		margin-left: 10px;
+	}
+
+	&__socials {
+		position: absolute;
+		right: 25px;
+		bottom: 45%;
+		transform: translateY(45%);
+
+		a {
+			color: #fff;
+			margin: 15px 0;
+			transition: all .4s ease;
+
+			&:hover {
+				color: $red;
+				transition: all .4s ease;
+			}
+		}
+	}
+}

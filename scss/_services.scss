@@ -1,0 +1,103 @@
+@import "_at_variables.scss";
+@import "_at_bootstrap.scss";
+
+.services {
+	background: url(../images/services-bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+
+
+	&__container {
+
+	}
+
+	&__title {
+		@include title;
+
+		&:before {
+			content: "";
+			@include title-line;
+		}
+
+		&:after {
+			content: "Services";
+			@include bg-word;
+			left: 100px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__link {
+		@include ref;
+		width: 300px;
+		color: #737373;
+		display: block;
+		margin: 10px 0;
+		letter-spacing: .25em;
+
+		&:hover, &:focus {
+			color: #b3b3b3;
+		}
+	}
+
+	&__cat-info {
+		display: none;
+		color: #b3b3b3;
+
+		&.active.show {
+			transition: all 1s ease;
+		}
+	}
+
+	&__cat-title {
+		font-family: 'AvenirHeavy', Arial, sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: .25em;
+		position: relative;
+		z-index: 1;
+
+		&:before {
+			content: "";
+			color: $red;
+			position: absolute;
+			left: -.3em;
+			top: -.4em;
+			font-size: 4em;
+			opacity: .4;
+			z-index: 0;
+		}
+
+		&--industrial {
+			&:before {
+				content: "I";
+			}
+		}
+		&--web {
+			&:before {
+				content: "W";
+				left: -.7em;
+			}
+		}
+		&--photo {
+			&:before {
+				content: "P";
+			}
+		}
+
+	}
+
+	&__txt {
+		font-family: 'Lato', Arial, sans-serif;
+		font-size: 14px;
+		letter-spacing: .200em;
+		font-size: 12px;
+	}
+}
+
+.visible {
+	display: inherit;
+}
