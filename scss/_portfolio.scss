@@ -7,6 +7,17 @@
 	background-size: cover;
 	position: relative;
 
+	&__container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.neg-margin {
+		margin-bottom: -10%;
+	}
+
 	&__title {
 		@include title;
 

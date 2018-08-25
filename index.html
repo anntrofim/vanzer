@@ -63,16 +63,16 @@
 		<section class="services section">
 			<div class="container services__container">
 				<div class="row">
-					<div class="offset-1 pl-6 col-9">
-						<h1 class="services__title text-uppercase text-white pb-3 mt-6 mt-md-8 mb-5 mb-md-7 is-animated">Services</h1>
+					<div class="offset-1 mb-9 col-9">
+						<h1 class="services__title text-uppercase text-white is-animated">Services</h1>
 					</div>
-					<div class="offset-1 pl-6 col-5 nav flex-column nav-pills" id="v-pills-s-tab" role="tablist" aria-orientation="vertical" style="padding-left: 15px;">
+					<div class="services__category offset-1 col-5 nav flex-column nav-pills" id="v-pills-s-tab" role="tablist" aria-orientation="vertical" style="padding-left: 15px;">
 						<a class="services__link is-animated my-2 nav-link" id="v-pills-s-industrial-tab" data-toggle="pill" href="#v-pills-s-industrial" role="tab" aria-controls="v-pills-s-industrial" aria-selected="true">Industrial design</a>
 						<a class="services__link is-animated my-2 nav-link" id="v-pills-s-web-tab" data-toggle="pill" href="#v-pills-s-web" role="tab" aria-controls="v-pills-s-web" aria-selected="false">Web design</a>
 						<a class="services__link is-animated my-2 nav-link active" id="v-pills-s-photography-tab" data-toggle="pill" href="#v-pills-s-photography" role="tab" aria-controls="v-pills-s-photography" aria-selected="false">Photography</a>
 					</div>
 
-					<div class="is-animated col-5 pt-7 tab-content" id="v-pills-s-tabContent">
+					<div class="services__description is-animated mt-9 offset-1 col-5 tab-content" id="v-pills-s-tabContent">
 						<div class="services__cat-info tab-pane fade" id="v-pills-s-industrial" role="tabpanel" aria-labelledby="v-pills-s-industrial-tab">
 							<h3 class="services__cat-title services__cat-title--industrial">Industrial design</h3>
 							<p class="services__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus esse ipsam aspernatur iste sit porro.</p>
@@ -80,8 +80,8 @@
 						<div class="services__cat-info tab-pane fade" id="v-pills-s-web" role="tabpanel" aria-labelledby="v-pills-s-web-tab">
 							<h3 class="services__cat-title services__cat-title--web">Web design</h3>
 							<p class="services__txt">Lip ex ea commodo
-							consequat. Duis aute irure esse
-							cillum dolore eu fugiat nulla pariatur. In voluptate velit esse
+								consequat. Duis aute irure esse
+								cillum dolore eu fugiat nulla pariatur. In voluptate velit esse
 							cillum dolore eu fugiat nulla pariatur.</p>
 						</div>
 						<div class="services__cat-info tab-pane fade active show" id="v-pills-s-photography" role="tabpanel" aria-labelledby="v-pills-s-photography-tab">
@@ -95,189 +95,65 @@
 		</section>
 
 		<section class="portfolio section">
-			<div class="container">
-				<div class="row">
-					<div class="offset-1 pl-6 col-12">
-						<h1 class="portfolio__title is-animated text-uppercase text-white pb-3 mt-6">Portfolio</h1>
+			<div class="container portfolio__container">
+				<div class="row neg-margin">
+					<div class="offset-1 mt-5 mb-7 col-12">
+						<h1 class="portfolio__title is-animated text-uppercase text-white pb-3">Portfolio</h1>
 					</div>
-
-					<!-- <div class="is-animated col-7 pl-6 tab-content" id="v-pills-p-tabContent"> -->
-
-<!-- 						<div class="tab-pane fade" id="v-pills-p-industrial" role="tabpanel" aria-labelledby="v-pills-p-industrial-tab">
-							<div class="row autoplay-i">
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-i-img1.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-3">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
+					<div class="is-animated offset-1 col-7 mt-4">
+						<div class="row autoplay-p">
+							<div class="portfolio__project mx-2 text-center text-white">
+								<div class="portfolio__photo">
+									<img src="images/portfolio-p-img1.jpg" alt="">
 								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-i-img2.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
+								<div class="portfolio__info mt-3">
+									<h6 class="text-uppercase">Coffee Cup</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+									<div class="portfolio__link mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
 								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-i-img3.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
+							</div>
+							<div class="portfolio__project mx-2 text-center text-white">
+								<div class="portfolio__photo">
+									<img src="images/portfolio-p-img2.jpg" alt="">
 								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-i-img4.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
+								<div class="portfolio__info mt-4">
+									<h6 class="text-uppercase">Coffee Cup</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+									<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
 								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-i-img5.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
+							</div>
+							<div class="portfolio__project mx-2 text-center text-white">
+								<div class="portfolio__photo">
+									<img src="images/portfolio-p-img3.jpg" alt="">
+								</div>
+								<div class="portfolio__info mt-4">
+									<h6 class="text-uppercase">Coffee Cup</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+									<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+								</div>
+							</div>
+							<div class="portfolio__project mx-2 text-center text-white">
+								<div class="portfolio__photo">
+									<img src="images/portfolio-p-img4.jpg" alt="">
+								</div>
+								<div class="portfolio__info mt-4">
+									<h6 class="text-uppercase">Coffee Cup</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+									<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
+								</div>
+							</div>
+							<div class="portfolio__project mx-2 text-center text-white">
+								<div class="portfolio__photo">
+									<img src="images/portfolio-p-img5.jpg" alt="">
+								</div>
+								<div class="portfolio__info mt-4">
+									<h6 class="text-uppercase">Coffee Cup</h6>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+									<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
 								</div>
 							</div>
 						</div>
-
-						<div class="tab-pane fade" id="v-pills-p-web" role="tabpanel" aria-labelledby="v-pills-p-web-tab">
-							<div class="row autoplay-w">
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-w-img1.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-3">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-w-img2.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-w-img3.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-w-img4.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-w-img5.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-							</div>
-						</div> -->
-
-						<!-- <div class="tab-pane fade active show" id="v-pills-p-photography" role="tabpanel" aria-labelledby="v-pills-p-photography-tab"> -->
-						<div class="is-animated offset-1 pl-6 col-7 mt-4">
-							<div class="row autoplay-p">
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-p-img1.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-3">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-p-img2.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-p-img3.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-p-img4.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-								<div class="portfolio__project mx-2 text-center text-white">
-									<div class="portfolio__photo">
-										<img src="images/portfolio-p-img5.jpg" alt="">
-									</div>
-									<div class="portfolio__info mt-4">
-										<h6 class="text-uppercase">Coffee Cup</h6>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-										<div class="portfolio__link mt-4 mx-auto d-flex justify-content-center align-items-center"><img src="icons/link.svg" alt=""></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- </div> -->
-						<!-- </div> -->
-
-<!-- 					<div class="portfolio__cat-list nav flex-column nav-pills col-3 offset-1 mt-7" id="v-pills-p-tab" role="tablist" aria-orientation="vertical">
-						<a class="services__link is-animated my-2 nav-link" id="v-pills-p-industrial-tab" data-toggle="pill" href="#v-pills-p-industrial" role="tab" aria-controls="v-pills-p-industrial" aria-selected="false">Industrial design</a>
-						<a class="services__link is-animated my-2 nav-link" id="v-pills-p-web-tab" data-toggle="pill" href="#v-pills-p-web" role="tab" aria-controls="v-pills-p-web" aria-selected="true">Web design</a>
-						<a class="services__link is-animated my-2 nav-link active" id="v-pills-p-photography-tab" data-toggle="pill" href="#v-pills-p-photography" role="tab" aria-controls="v-pills-p-photography" aria-selected="false">Photography</a>
-					</div> -->
-
-
+					</div>
 				</div>
 			</div>
 		</section>
@@ -285,11 +161,11 @@
 		<section class="blog section">
 			<div class="container">
 				<div class="row">
-					<div class="pl-6 col-12">
-						<h1 class="blog__title is-animated text-uppercase pb-3 mt-6">Recent Blog</h1>
+					<div class="col-12 mt-7 mb-7">
+						<h1 class="blog__title is-animated text-uppercase pb-3 mt-5">Recent Blog</h1>
 					</div>
 
-					<div class="col-12 blog_rotator" id="blogRotator">
+					<div class="col-12 blog__rotator" id="blogRotator">
 						<div class="is-animated">
 							<div class="blog__article d-flex justify-content-between align-items-center at-active" id="blogArticle-1">
 								<div class="blog__picture"><img class="w-100" src="images/blog-img1.jpg" alt=""></div>
@@ -322,12 +198,10 @@
 
 		<section class="contact section">
 
-
 			<div class="contact__left w-50 position-absolute"></div>
 			<div class="contact__map is-animated w-50 position-absolute" id="map" ></div>
 
-
-			<div class="container">
+			<div class="container contact__container">
 				<div class="row">
 					<div class="contact__info offset-1 col-5 d-flex flex-column justify-content-between">
 						<h1 class="contact__title is-animated text-uppercase text-white pb-3 mt-6">Contact</h1>
