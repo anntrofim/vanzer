@@ -54,21 +54,16 @@
 		width: 240px;
 		font-size: 14px;
 		letter-spacing: .2em;
+		border-top: 2px solid $red;
 
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0;
-			height: 2px;
-			width: 100%;
-			background-color: $red;
+		.header__arr {
+			transition: all .8s ease;
 		}
 
 		&:hover {
 			.header__arr {
-				animation-name: arrow-move;
-				animation-duration: 1.7s;
-				animation-iteration-count: infinite;
+				transform: translateX(100px);
+				transition: all .8s ease;
 			}
 		}
 	}
