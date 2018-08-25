@@ -8,11 +8,10 @@
 	position: relative;
 
 	&__container {
-		// border: 1px solid $red;
 		position: absolute;
-		top: 35%;
+		top: 50%;
 		left: 50%;
-		transform: translateX(-50%);
+		transform: translate(-50%, -50%);
 	}
 
 	&__title {
@@ -41,7 +40,6 @@
 
 	&__bgimg {
 		position: absolute;
-		// opacity: .6;
 		z-index: -1;
 
 		img {
@@ -54,7 +52,7 @@
 		}
 		&--2 {
 			width: 30%;
-			margin-top: 10px;
+			margin-top: 80px;
 		}
 	}
 }
